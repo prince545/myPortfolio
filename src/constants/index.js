@@ -153,7 +153,7 @@ import {
         { name: "mongodb", color: "green-text-gradient" },
         { name: "tailwind", color: "pink-text-gradient" },
       ],
-      image: "public/Screenshot 2025-03-13 154009.png", // Image path
+      image: "/Screenshot 2025-03-13 154009.png", // Image path
     },
     {
       name: "Todo App",
@@ -164,7 +164,7 @@ import {
         { name: "restapi", color: "green-text-gradient" },
         { name: "scss", color: "pink-text-gradient" },
       ],
-      image: "public/Screenshot 2025-03-13 153727.png",
+      image: "/Screenshot 2025-03-13 153727.png",
     },
     {
       name: "Food-delivery App",
@@ -175,7 +175,7 @@ import {
         { name: "supabase", color: "green-text-gradient" },
         { name: "css", color: "pink-text-gradient" },
       ],
-      image: "public/1741809011703.png",
+      image: "/1741809011703.png",
     },
   ];
   
