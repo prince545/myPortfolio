@@ -44,20 +44,37 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        
+        <h2 className={styles.sectionHeadText}>INTRODUCTION</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+      <motion.div
+  variants={fadeIn("", "", 0.1, 1)}
+  className="flex items-start gap-10 mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
+>
+  <img 
+    src="/prince.png" 
+    alt="About me" 
+    className="w-[400px] h-[300px] object-contain rounded-lg shadow-lg"
+  />
+    <div>
+    <h1 className="text-5xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text mb-4">
+      Overview
+    </h1>
+    <p className="text-lg text-gray-300 leading-relaxed">
+      I'm a <span className="text-pink-400 font-semibold">skilled software developer</span> with experience in 
+      <span className="text-blue-400"> TypeScript</span> and <span className="text-yellow-400">JavaScript</span>, and expertise in frameworks like 
+      <span className="text-green-400"> React</span>, <span className="text-teal-400">Node.js</span>, and <span className="text-indigo-400">Three.js</span>. 
+      I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve 
+      <span className="text-orange-400 font-semibold"> real-world problems</span>. Let's work together to bring your ideas to life!
+    </p>
+  </div>
+</motion.div>
+ 
+
+
+
+
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
